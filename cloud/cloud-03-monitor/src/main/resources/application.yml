@@ -1,0 +1,25 @@
+server:
+  port: 8010
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: spring-cloud-monitor
+
+  cloud:
+    inetutils:
+      ignoredInterfaces:
+        - docker0
+        - veth.*
+      preferredNetworks:
+        - 192.168
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"

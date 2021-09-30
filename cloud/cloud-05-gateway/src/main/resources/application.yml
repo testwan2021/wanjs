@@ -1,0 +1,16 @@
+server:
+  port: 8020
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: spring-cloud-gateway
+
+  cloud:
+    inetutils:
+      ignoredInterfaces:
+        - docker0
+        - veth.*
+      preferredNetworks:
+        - 192.168

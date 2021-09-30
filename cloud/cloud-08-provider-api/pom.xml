@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.somnus</groupId>
+    <artifactId>cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <description>服务中心API</description>
+  <groupId>com.somnus.provider.api</groupId>
+  <artifactId>cloud-08-provider-api</artifactId>
+  <packaging>pom</packaging>
+  
+  <modules>
+    <module>cloud-08-provider-mdc-api</module>
+    <module>cloud-08-provider-omc-api</module>
+    <module>cloud-08-provider-opc-api</module>
+    <module>cloud-08-provider-tpc-api</module>
+    <module>cloud-08-provider-uac-api</module>
+    <module>cloud-08-provider-sdk-api</module>
+  </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.somnus.common</groupId>
+      <artifactId>cloud-06-common-base</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.somnus.common</groupId>
+      <artifactId>cloud-06-security-feign</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper</artifactId>
+    </dependency>
+  </dependencies>
+  
+</project>

@@ -1,0 +1,32 @@
+spring:
+  cloud:
+    config:
+      enabled: true
+      label: master
+      server:
+        git:
+          uri: https://github.com/love-somnus/cloud
+          search-paths: config-repository
+    bus:
+      refresh:
+        enabled: true
+  rabbitmq:
+    host: 121.43.162.28
+    port: 5672
+    username: guest
+    password: guest
+  
+  security:
+    user:
+      name: root
+      password: passw0rd
+
+#加入注册中心，实现高可用
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:passw0rd@localhost:8761/eureka/
+  instance:
+    ip-address: localhost # 指定此实例的ip
+    prefer-ip-address: true #注册时使用ip而不是主机名
+    instance-id: ${spring.application.name}:${eureka.instance.ip-address}:${server.port}

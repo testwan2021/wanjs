@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.somnus</groupId>
+    <artifactId>cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <description>公共类</description>
+  <groupId>com.somnus.common</groupId>
+  <artifactId>cloud-06-common</artifactId>
+  <packaging>pom</packaging>
+  
+  <modules>
+    <module>cloud-06-common-base</module>
+    <module>cloud-06-common-config</module>
+    <module>cloud-06-common-core</module>
+    <module>cloud-06-common-util</module>
+    <module>cloud-06-common-zk</module>
+    <module>cloud-06-security-app</module>
+    <module>cloud-06-security-core</module>
+    <module>cloud-06-security-feign</module>
+  </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+  </dependencies>
+  
+</project>

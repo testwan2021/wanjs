@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.somnus</groupId>
+    <artifactId>cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <description>数据服务中心Mybatis Generator</description>
+  <groupId>com.somnus.generator</groupId>
+  <artifactId>cloud-09-generator</artifactId>
+  <packaging>pom</packaging>
+  
+  <modules>
+    <module>cloud-09-generator-mdc</module>
+    <module>cloud-09-generator-omc</module>
+    <module>cloud-09-generator-opc</module>
+    <module>cloud-09-generator-tpc</module>
+    <module>cloud-09-generator-uac</module>
+  </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.mybatis.generator</groupId>
+      <artifactId>mybatis-generator-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+</project>

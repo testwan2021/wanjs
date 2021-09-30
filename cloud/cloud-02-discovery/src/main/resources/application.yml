@@ -1,0 +1,25 @@
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: dev 
+  application:
+    name: spring-cloud-discovery
+
+  cloud:
+    inetutils:
+      ignoredInterfaces:
+        - docker0
+        - veth.*
+      preferredNetworks:
+        - 192.168
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
