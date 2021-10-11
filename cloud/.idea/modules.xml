@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud.iml" filepath="$PROJECT_DIR$/cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-01-eureka/cloud-01-eureka.iml" filepath="$PROJECT_DIR$/cloud-01-eureka/cloud-01-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-02-discovery/cloud-02-discovery.iml" filepath="$PROJECT_DIR$/cloud-02-discovery/cloud-02-discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-03-monitor/cloud-03-monitor.iml" filepath="$PROJECT_DIR$/cloud-03-monitor/cloud-03-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-04-zipkin/cloud-04-zipkin.iml" filepath="$PROJECT_DIR$/cloud-04-zipkin/cloud-04-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-05-gateway/cloud-05-gateway.iml" filepath="$PROJECT_DIR$/cloud-05-gateway/cloud-05-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-06-common/cloud-06-common.iml" filepath="$PROJECT_DIR$/cloud-06-common/cloud-06-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-06-common/cloud-06-common-base/cloud-06-common-base.iml" filepath="$PROJECT_DIR$/cloud-06-common/cloud-06-common-base/cloud-06-common-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-06-common/cloud-06-common-config/cloud-06-common-config.iml" filepath="$PROJECT_DIR$/cloud-06-common/cloud-06-common-config/cloud-06-common-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-06-common/cloud-06-common-core/cloud-06-common-core.iml" filepath="$PROJECT_DIR$/cloud-06-common/cloud-06-common-core/cloud-06-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-06-common/cloud-06-common-util/cloud-06-common-util.iml" filepath="$PROJECT_DIR$/cloud-06-common/cloud-06-common-util/cloud-06-common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-06-common/cloud-06-common-zk/cloud-06-common-zk.iml" filepath="$PROJECT_DIR$/cloud-06-common/cloud-06-common-zk/cloud-06-common-zk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-06-common/cloud-06-security-app/cloud-06-security-app.iml" filepath="$PROJECT_DIR$/cloud-06-common/cloud-06-security-app/cloud-06-security-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-06-common/cloud-06-security-core/cloud-06-security-core.iml" filepath="$PROJECT_DIR$/cloud-06-common/cloud-06-security-core/cloud-06-security-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-06-common/cloud-06-security-feign/cloud-06-security-feign.iml" filepath="$PROJECT_DIR$/cloud-06-common/cloud-06-security-feign/cloud-06-security-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-07-provider/cloud-07-provider.iml" filepath="$PROJECT_DIR$/cloud-07-provider/cloud-07-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-mdc/cloud-07-provider-mdc.iml" filepath="$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-mdc/cloud-07-provider-mdc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-omc/cloud-07-provider-omc.iml" filepath="$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-omc/cloud-07-provider-omc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-opc/cloud-07-provider-opc.iml" filepath="$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-opc/cloud-07-provider-opc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-tpc/cloud-07-provider-tpc.iml" filepath="$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-tpc/cloud-07-provider-tpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-uac/cloud-07-provider-uac.iml" filepath="$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-uac/cloud-07-provider-uac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-api.iml" filepath="$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-mdc-api/cloud-08-provider-mdc-api.iml" filepath="$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-mdc-api/cloud-08-provider-mdc-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-omc-api/cloud-08-provider-omc-api.iml" filepath="$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-omc-api/cloud-08-provider-omc-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-opc-api/cloud-08-provider-opc-api.iml" filepath="$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-opc-api/cloud-08-provider-opc-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-sdk-api/cloud-08-provider-sdk-api.iml" filepath="$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-sdk-api/cloud-08-provider-sdk-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-tpc-api/cloud-08-provider-tpc-api.iml" filepath="$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-tpc-api/cloud-08-provider-tpc-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-uac-api/cloud-08-provider-uac-api.iml" filepath="$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-uac-api/cloud-08-provider-uac-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-09-generator/cloud-09-generator.iml" filepath="$PROJECT_DIR$/cloud-09-generator/cloud-09-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-mdc/cloud-09-generator-mdc.iml" filepath="$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-mdc/cloud-09-generator-mdc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-omc/cloud-09-generator-omc.iml" filepath="$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-omc/cloud-09-generator-omc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-opc/cloud-09-generator-opc.iml" filepath="$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-opc/cloud-09-generator-opc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-tpc/cloud-09-generator-tpc.iml" filepath="$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-tpc/cloud-09-generator-tpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-uac/cloud-09-generator-uac.iml" filepath="$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-uac/cloud-09-generator-uac.iml" />
+    </modules>
+  </component>
+</project>

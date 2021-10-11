@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-01-eureka" />
+        <module name="cloud-02-discovery" />
+        <module name="cloud-03-monitor" />
+        <module name="cloud-04-zipkin" />
+        <module name="cloud-05-gateway" />
+        <module name="cloud-06-common-base" />
+        <module name="cloud-06-common-config" />
+        <module name="cloud-06-common-core" />
+        <module name="cloud-06-common-util" />
+        <module name="cloud-06-common-zk" />
+        <module name="cloud-06-security-app" />
+        <module name="cloud-06-security-core" />
+        <module name="cloud-06-security-feign" />
+        <module name="cloud-07-provider-mdc" />
+        <module name="cloud-07-provider-omc" />
+        <module name="cloud-07-provider-opc" />
+        <module name="cloud-07-provider-tpc" />
+        <module name="cloud-07-provider-uac" />
+        <module name="cloud-08-provider-mdc-api" />
+        <module name="cloud-08-provider-omc-api" />
+        <module name="cloud-08-provider-opc-api" />
+        <module name="cloud-08-provider-sdk-api" />
+        <module name="cloud-08-provider-tpc-api" />
+        <module name="cloud-08-provider-uac-api" />
+        <module name="cloud-09-generator-mdc" />
+        <module name="cloud-09-generator-omc" />
+        <module name="cloud-09-generator-opc" />
+        <module name="cloud-09-generator-tpc" />
+        <module name="cloud-09-generator-uac" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud" target="1.8" />
+      <module name="cloud-01-eureka" target="1.8" />
+      <module name="cloud-02-discovery" target="1.8" />
+      <module name="cloud-03-monitor" target="1.8" />
+      <module name="cloud-04-zipkin" target="1.8" />
+      <module name="cloud-05-gateway" target="1.8" />
+      <module name="cloud-06-common" target="1.8" />
+      <module name="cloud-06-common-base" target="1.8" />
+      <module name="cloud-06-common-config" target="1.8" />
+      <module name="cloud-06-common-core" target="1.8" />
+      <module name="cloud-06-common-util" target="1.8" />
+      <module name="cloud-06-common-zk" target="1.8" />
+      <module name="cloud-06-security-app" target="1.8" />
+      <module name="cloud-06-security-core" target="1.8" />
+      <module name="cloud-06-security-feign" target="1.8" />
+      <module name="cloud-07-provider" target="1.8" />
+      <module name="cloud-07-provider-mdc" target="1.8" />
+      <module name="cloud-07-provider-omc" target="1.8" />
+      <module name="cloud-07-provider-opc" target="1.8" />
+      <module name="cloud-07-provider-tpc" target="1.8" />
+      <module name="cloud-07-provider-uac" target="1.8" />
+      <module name="cloud-08-provider-api" target="1.8" />
+      <module name="cloud-08-provider-mdc-api" target="1.8" />
+      <module name="cloud-08-provider-omc-api" target="1.8" />
+      <module name="cloud-08-provider-opc-api" target="1.8" />
+      <module name="cloud-08-provider-sdk-api" target="1.8" />
+      <module name="cloud-08-provider-tpc-api" target="1.8" />
+      <module name="cloud-08-provider-uac-api" target="1.8" />
+      <module name="cloud-09-generator" target="1.8" />
+      <module name="cloud-09-generator-mdc" target="1.8" />
+      <module name="cloud-09-generator-omc" target="1.8" />
+      <module name="cloud-09-generator-opc" target="1.8" />
+      <module name="cloud-09-generator-tpc" target="1.8" />
+      <module name="cloud-09-generator-uac" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-01-eureka" options="-parameters" />
+      <module name="cloud-02-discovery" options="-parameters" />
+      <module name="cloud-03-monitor" options="-parameters" />
+      <module name="cloud-04-zipkin" options="-parameters" />
+      <module name="cloud-05-gateway" options="-parameters" />
+      <module name="cloud-06-common-base" options="-parameters" />
+      <module name="cloud-06-common-config" options="-parameters" />
+      <module name="cloud-06-common-core" options="-parameters" />
+      <module name="cloud-06-common-util" options="-parameters" />
+      <module name="cloud-06-common-zk" options="-parameters" />
+      <module name="cloud-06-security-app" options="-parameters" />
+      <module name="cloud-06-security-core" options="-parameters" />
+      <module name="cloud-06-security-feign" options="-parameters" />
+      <module name="cloud-07-provider-mdc" options="-parameters" />
+      <module name="cloud-07-provider-omc" options="-parameters" />
+      <module name="cloud-07-provider-opc" options="-parameters" />
+      <module name="cloud-07-provider-tpc" options="-parameters" />
+      <module name="cloud-07-provider-uac" options="-parameters" />
+      <module name="cloud-08-provider-mdc-api" options="-parameters" />
+      <module name="cloud-08-provider-omc-api" options="-parameters" />
+      <module name="cloud-08-provider-opc-api" options="-parameters" />
+      <module name="cloud-08-provider-sdk-api" options="-parameters" />
+      <module name="cloud-08-provider-tpc-api" options="-parameters" />
+      <module name="cloud-08-provider-uac-api" options="-parameters" />
+      <module name="cloud-09-generator-mdc" options="-parameters" />
+      <module name="cloud-09-generator-omc" options="-parameters" />
+      <module name="cloud-09-generator-opc" options="-parameters" />
+      <module name="cloud-09-generator-tpc" options="-parameters" />
+      <module name="cloud-09-generator-uac" options="-parameters" />
+    </option>
+  </component>
+</project>

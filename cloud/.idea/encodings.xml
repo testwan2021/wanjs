@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-01-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-02-discovery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-03-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-04-zipkin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-05-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-06-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-06-common/cloud-06-common-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-06-common/cloud-06-common-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-06-common/cloud-06-common-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-06-common/cloud-06-common-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-06-common/cloud-06-common-zk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-06-common/cloud-06-security-app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-06-common/cloud-06-security-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-06-common/cloud-06-security-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-07-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-mdc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-omc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-opc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-tpc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-07-provider/cloud-07-provider-uac" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-08-provider-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-mdc-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-omc-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-opc-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-sdk-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-tpc-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-08-provider-api/cloud-08-provider-uac-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-09-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-mdc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-omc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-opc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-tpc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-09-generator/cloud-09-generator-uac" charset="UTF-8" />
+  </component>
+</project>
