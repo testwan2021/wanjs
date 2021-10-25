@@ -1,0 +1,26 @@
+server:
+  port: 6902
+
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:3344
+      name: config-dept # 需要从git上读取的资源名称，不要要后缀
+      label: master
+      profile: dev
+
+
+---
+
+server:
+  port: 6901
+
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:3344
+      name: config-dept # 需要从git上读取的资源名称，不要要后缀
+      label: master
+      profile: test
