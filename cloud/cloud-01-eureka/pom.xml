@@ -34,6 +34,12 @@
       <artifactId>spring-cloud-starter-security</artifactId>
     </dependency>
     <!-- Security安全认证end -->
+
+    <dependency>
+      <groupId>org.redisson</groupId>
+      <artifactId>redisson-spring-boot-starter</artifactId>
+      <version>3.13.3</version>
+    </dependency>
     
   </dependencies>
   

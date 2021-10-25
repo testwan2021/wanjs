@@ -1,0 +1,65 @@
+1.spring是什么？
+类的实例化->new出来的时候，还没有进行属性设值
+类的初始化->完成set属性依赖注入
+
+2.Ioc ->依赖注入 setter注入 构造器注入
+背景：所有对象使用时，必须要去创建，那我们能不能在我们用的时候，直接去容器里面拿？
+是一种思想，将你写的对象交给容器，而不是自己去new创建
+解决：IOC
+没有IOC的场景，B1 b=new B(new A())//在b实例化前需要A进行实例化
+有Ioc容器，B1 b =Webutil.getServie("bean的id");
+区别：在没有容器的情况下，如果依赖的类越多，每次创建new的对象也会越多，并且容易导致资源的浪费。
+缺点：生成对象过程比直接new复杂，对象生成利用了反射，效率上会低点（在ioc提高了维护和灵活性，这点性能不算事情）
+
+3.Bean的配置  ->基本定义  作用域 依赖关系  自动装配 抽象Bean  工厂Bean 生命周期
+bean配置方式：xml ,注解定义，java类定义bean
+xml-><bean id="fool" class="com.hxyc.Fool"/>
+注解定义->@Component("userDao")加到类上，Spring容器自动将POJO转换为容器管理的Bean，可以对DAO、Service及Web层的Controller进行注解
+需要设置： <!--②扫描类包以应用注解定义的Bean-->
+<context:component-scan base-package="com.baobaotao.anno"/>
+基于java类提供Bean定义：普通的POJO类中只要标注@Configuration注解，类的方法处可以标注@Bean注解
+
+4.AOP  ->原理  实现方式（基于xml和注解）
+背景：是一种编程思想的补充，通过预编译+运行期代理实现（函数式编程），做到业务层和代理对象之间解耦，提高代码开发效率和代码可重用。
+切面例子：web层-网关层-接口层-数据层每个都是一个切面，对象与对象，方法与方法，模块与模块
+比如我们：我们对每个接口都做活动的有效性校验规则。有多少接口，就需要copy多少代码，把校验的规则抽出来（切点），这种时候每个接口都需要内部调用
+这种耦合很高，所以我们需要把校验规则这个切点注入（切面）
+Aspect 切面
+Joint point 连接点
+Pintcut 切点
+Advice 增强 通过 before、after 和 around 来区别是在每个 joint point 之前、之后还是代替执行的代码
+Target
+Weaving
+
+5.spring事务
+事务传播机制  隔离机制 只读  事务超时 回滚规则
+事务：ACID 原子性 独立性 隔离性 持久性
+实现2种方式：
+编程式事务管理：TransactionTemplate，编程的可以做到代码块，
+xml与配合AOP：声明粒度是在方法上面， @Transactional
+事务传播：就是事务嵌套，
+propagation_required默认->加到外层事务中执行
+propagation_reques_new->开启新的事务，先执行嵌套内事务，在执行外层事务
+事务隔离级别：多个任务运行会操作同一个数据，会引起：不可重复读重点在修改，幻读重点在新增或删除
+如果事务完全隔离会引起性能问题，DEFAULT 这是spring默认的隔离级别，表示使用数据库默认的事务隔离级别
+Sql Server , Oracle默认隔离级别：读取已提交的
+MySQL-InnoDB：可重复读
+事务只读：在一些特定查询的场景，可以把设置只读，这样提高查询效率 @Transactional(readOnly=true)
+事务超时:声明式事务的下一个特性就是它的超时,避免长时间运行的事务会不必要地占用数据库资源 @Transactional(timeout=30)
+回滚规则：事务只在出现运行时异常（runtime exception）时回滚，而在出现受检查异常（checked exception）时不回滚
+@Transactional(rollbackFor=RuntimeException.class)
+
+6.springMVC流程
+DispatcherServlet来设计，处理http请求与响应。
+发起请求-前端控制器dispatcherServlet处理器-请求handlermapping获取handler(找到对应匹配的handler处理的controller)-dispatcherservlet
+请求handlerAdatper（把controller接口返回的结果返回）--执行handler--处理完返回modelandview-dispatcherServlet-viewResolver--返回view(将数据渲染到页面)
+DispatcherServlet:整个流程控制的中心,降低组件的耦合
+HandlerMapping：URL去查找处理器，例如：配置文件方式，实现接口方式，注解方式等。
+HandlAdapter：通过HandlerAdapter对处理器进行执行返回controller结果
+
+7.ApplicationContext原理
+
+
+
+
+

@@ -1,0 +1,20 @@
+1.git使用场景？
+如果修改的代码有bug,需要创建一个bug的分支，由组员改好后，提交给review分支，由(review 带队的人或者组长)组长审核后到合并到master主分支，
+再删除bug分支，回到正常环境继续开发
+
+2.在公司忘记提交github后，在家里继续写了代码，怎么办？
+昨天的代码和今天的代码需要合并 git  fetch  ->git  rebase
+
+3.如何做代码的review?
+创建review分支，再创建好各人分支，当写完各人逻辑，再合并到review分支,由组长审核
+
+4.常用命令
+新增文件：git  add  file  或者 git  add .
+提交：git commit -m "描述"
+查看工作区状态 git  status -s
+拉取合并远程分支  git  fetch /git  merge /git  pull
+查看提交操作历史记录 git reflog
+
+5.提交代码时冲突怎么产生，如何解决
+诸如公共类的公共方法，我和别人同时修改同一个文件，他提交后我再提交就会报冲突的错误。
+

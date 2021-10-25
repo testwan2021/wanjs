@@ -1,0 +1,88 @@
+1.mybatis原理
+原理：根据xml配置-创建sqlsessionfactory,配置方法可以注解或者xml中获取sqlsession，进行执行sql的所有方法，
+封装了一系列的增删改查事务等操作和关闭数据源连接。
+用户发起请求->mybatis读取相关配置->和数据库交互->接受数据->返回页面
+底层还是原生jdbc操作,主要是以下处理器进行了封装。
+sqlsessionFactory: 表示和数据库交互的会话,完成必要 数据库增删改查功能。
+sqlsessionExector: 执行器 是MyBatis调度的核心, 负责SQL语句的生成和查询缓存的维护。
+statementHandler sql查询器 语句处理器,封装了JDBC的DML、DQL 操作、参数设置。
+parameterHanlder 参数处理器 用户传入参数转换为JDBC需要的参数值。
+resultHanlder 结果处理器 结果集中的数据封装到List集合。
+typeHanlder 类型转换器 Java类型和JDBC类型的相互转换。
+mapper 映射器
+typeAliases别名
+setting 环境设置
+mappedstatement 映射语句对象,维护了一条< insert|update|delete|select>节点的封装。
+sqlsource SQL源, 根据用户传入的参数生成SQL语句,并封装到BoundSql中。
+BoundSql : SQL绑定, 封装SQL语句和对应的参数信息。
+Configuration : MyBatis 全局配置对象,封装所有配置信息。
+
+2.整合spring+mybatis框架实战
+dao 业务逻辑代码
+mapper  代理接口
+pojo 实体对象
+可以通过xml绑定id来实现
+还可以通过动态代理+注解
+@Select("SELECT * FROM USER WHERE id = #{id}")
+public User findUserById(int id) throws Exception;
+
+3.动态sql语句->在xml中获取参数值的2种方式 #  $
+4.mybatis延迟加载
+定义：延迟加载为懒加载，作用提高程序的运行效率，延迟加载只发生在多个表的级联查询，单表无延迟加载的功能
+场景：学生表和班级表，由于表关联id,我们查询学生表也会把班级信息带出来
+延迟加载思路:就是我们只要学生信息时，就只查学生的，需要班级的，再发一条班级查询的sql
+<setting name="lazyLoadingEnabled" value="true"></setting>
+优点：正常使用延迟加载，可以提高查询效率。也可以减少java与数据库的交互，多使用于多张表查询关联的场景。
+
+5.mybatis搭建过程
+6.mybtis缓存机制
+目的：提高查询效率和减少数据库压力。有一级缓存和二级缓存，也可以继承三方缓存的接口
+一级缓存（本地缓存）在sqlsession中使用，默认开启，在同一个会话，执行同一个sql，第二次会取缓存。不同的会话，还是会出现数据库，mybatis
+开启和数据库的查询，代表一次会话，会创建一个loacl cache.
+一级缓存生命周期：会话结束，缓存失效，sqlsession.close()会话失效，update操作会清理缓存对象。
+一级缓存不足：缓存不能跨会话，在分布式或者多会话，会存在脏数据，想解决这个问题，得用二级缓存。
+二级缓存：配置 mybatis.configuration.cache-enabled=true
+二级缓存清除策略：最近最少使用（LRU默认），先进先出，软引用，弱引用
+
+7.整合第三方缓存Ehcache redis
+在很少修改或者根本不修改的数据采用缓存。比如，很耗时的sql或者电话月账单
+ehcache是java内存缓存，配置简单，断电失效
+
+8.分页插件
+pagehelper,选择数据库方言
+9.orm思想
+为了解决面向对象与关系数据库不存在的一种解决方案。对象与数据库之间的映射感谢，类-表，对象-行记录，属性-表字段
+主要是把对象和数据库封装成一套API,带有数据库的增删改查操作。好处：持久层数据库替换后，代码不用修改。
+支撑：定制化sql，高级映射，存储过程等。
+
+10.mybatis核心配置
+全局的配置信息  <environments default="development">
+属性配置信息
+插件配置信息
+配置环境信息(连接池+事务)
+关联映射文件
+
+11.mybatis参数处理
+单个参数直接传#或者$
+多个参数可以采用map接受
+命名param指定参数
+pojo对象传值
+
+12.mybatis开发步骤
+13.jdbc的不足，mybatis是怎么改变
+在jdbc中频繁创建数据源和关闭-->mybatis利用sqlmapconfig.xml中的数据库连接池来管理
+sql代码写在java文件中不好维护-->mybatis中利用xxxmapper.xml配置sql脚本
+jdbc带的参数条件，需要占位符一一对应-->mybatis自动将java对象与sql映射
+查询的对象结果也可以与java映射
+
+14.使用场景？优缺点？
+简单易学，解除了sql与java代码的耦合，提供映射标签，xml支撑动态sql
+缺点：sql量大，特别多表关联复杂，sql依赖数据库，底层替换难度大
+
+
+15.日志框架
+日志框架可以把日志的输出和代码分离;log4j  logback  ,设置不同的日志级别（如: INFO、WARN、ERROR）
+
+
+
+
