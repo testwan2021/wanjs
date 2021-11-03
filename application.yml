@@ -20,7 +20,7 @@ server:
 spring:
   cloud:
     config:
-      uri: http://localhost:3344
+      uri: http://localhost:33443
       name: config-dept # 需要从git上读取的资源名称，不要要后缀
       label: master
       profile: test
