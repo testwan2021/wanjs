@@ -24,5 +24,8 @@ spring:
       name: config-dept # 需要从git上读取的资源名称，不要要后缀
       label: master
       profile: test
-config:
- info2:woshdhdhjdjjfhfhfhfh
+rabbitmq: #rabbitmq相关配置，15672是web管理端口，5672是mq访问端口
+  port: 5672
+  host: localhost
+  username: guest
+  password: guest
