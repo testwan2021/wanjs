@@ -14,7 +14,7 @@ spring:
 ---
 
 server:
-  port: 6905
+  port: 6908
 
 
 spring:
